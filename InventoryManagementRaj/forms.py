@@ -3,7 +3,6 @@ from wtforms import StringField,IntegerField,SelectField,SubmitField
 from wtforms.validators import DataRequired,NumberRange
 
 
-
 class addproduct(FlaskForm):
     prodname = StringField('Product Name', validators=[DataRequired()])
     prodqty = IntegerField('Quantity', validators=[NumberRange(min=5, max=1000000),DataRequired()])

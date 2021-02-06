@@ -300,3 +300,4 @@ def get_exported(product, location):
     exported = Movement.query.filter_by(pname=product).filter_by(
         frm=location).all()
     return exported
+

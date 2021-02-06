@@ -37,3 +37,4 @@ class Balance(db.Model):
 
     def __repr__(self):
         return f"Balance('{self.bid}','{self.product}','{self.location}','{self.quantity}')"
+
